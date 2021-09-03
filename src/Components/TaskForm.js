@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import { TaskContext } from '../TaskContext';
+import { TaskContext } from '../contexts/TaskContext';
 
 const NewTaskForm = () => {
     const {dispatch} = useContext(TaskContext);
@@ -7,9 +7,7 @@ const NewTaskForm = () => {
     const[details, setDetails] = useState('');
     const handleSubmit = (e) => {
         e.preventDefault();
-        dispatch({type: 'ADD_TASK', task: {
-            title, details
-        }});
+        dispatch({type: 'ADD_TASK', task: { title, details}});
         setTitle('');
         setDetails('');
     }

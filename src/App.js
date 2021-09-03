@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './Components/Navbar';
 import NewTaskForm from './Components/TaskForm';
 import TaskList from './Components/TaskList';
-import TaskContextProvider from './TaskContext';
+import TaskContextProvider from './contexts/TaskContext';
 
 function App() {
   return (
