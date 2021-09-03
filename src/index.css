@@ -5,9 +5,83 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #2b6777;
 }
+.App{
+  background: #ffffff;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 700px;
+  color: black;
+  border-radius: 10px;
+}
+.navbar{
+  padding: 10px 20px;
+  text-align: center;
+  background: #f2f2f2;
+  border-radius: 10px;
+}
+.navbar h1{
+  margin: 10px 0;
+}
+.task-list{
+  margin: 20px;
+}
+.task-list ul{
+  padding: 0;
+  list-style-type: none;
+}
+.task-list li{
+  background: #c8d8e4;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.task-list li:hover{
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+.task-list .title{
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+.task-list .author{
+  font-size: 0.9em;
+  color: #ddd;
+}
+.empty{
+  margin: 20px;
+  text-align: center;
+}
+form{
+  padding: 20px;
+}
+input[type='text']{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  background: #c8d8e4;
+  color: black;
+  border: 0;
+  font-size: 12pt;
+}
+input[type='submit']{
+  margin: 10px auto;
+  background: #a6cce9;
+  border: 0;
+  padding: 6px 20px;
+  display: block;
+  border-radius: 6px;
+  font-size: 12pt;
+  font-weight: bold;
+}
+input[type='submit']:hover{
+  background: #688296;
+  cursor: pointer;
+  font-size: 12pt;
+  font-weight: bold;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
